@@ -1,0 +1,126 @@
+/* Start of header */
+
+header {
+  height: 100vh;
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header::after {
+  content: "";
+  background-color: var(--layer-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--layer-color);
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 999;
+}
+.side-bar a {
+  color: white;
+}
+.side-bar a:hover {
+  color: var(--main-color);
+}
+#closeBtn {
+  transform: translateX(650%);
+  cursor: pointer;
+}
+
+#openBtn {
+  cursor: pointer;
+}
+/* End of header */
+/* Start of Singer */
+
+.singer h3 {
+  background-color: var(--layer-color);
+  color: white;
+  cursor: pointer;
+}
+
+.singer p {
+  background-color: var(--slid-color);
+}
+/* End of Singer */
+
+/* Start of timer */
+
+#timer {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-height: 20.625rem;
+  position: relative;
+  padding: 6.25rem 0;
+}
+
+#timer::after {
+  content: "";
+  background-color: var(--layer-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Start of contact */
+
+.join i {
+  color: var(--icon-color);
+}
+
+.join .email {
+  color: var(--main-color);
+}
+
+#message {
+  height: 200px;
+}
+#wordCount {
+  color: var(--main-color);
+}
+#sendBtn {
+  background-color: var(--main-color);
+  color: white;
+  border: transparent;
+}
+.social-icons i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.social-icons i:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+/* End of contact */
+/* Shared Site */
+:root {
+  --main-color: #d62e33;
+  --layer-color: rgba(214, 46, 51, 0.6);
+  --slid-color: #ccc;
+  --icon-color: #777;
+}
+
+body {
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+}
